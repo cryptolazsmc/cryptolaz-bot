@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>CryptoLaz-bot — Learn basic Dip/Rip on paper with Muse</title>
+  <meta name="description" content="Three easy steps: get Muse, paste one message, follow along. Paper practice only, basic Dip/Rip, Solana (SOL) only.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>CryptoLaz<span>-bot</span></h1>
+      <p class="tag">Follow the Protocol</p>
+      <p class="lead">Learn the basic Dip/Rip in 3 easy steps. Muse does the explaining. You stay in control.</p>
+      <p class="scope"><strong>Paper practice only &middot; basic Dip/Rip &middot; Solana (SOL) only.</strong> No real money, no live trading.</p>
+    </header>
+
+    <p id="invited" class="invited" hidden></p>
+
+    <section class="card step">
+      <div class="num">1</div>
+      <div>
+        <h2>Join Muse</h2>
+        <p>Muse is Meta's personal AI agent (free app, with usage limits).</p>
+        <a id="getmuse" class="btn" href="#">Join Muse</a>
+        <div id="invite" class="redeem" hidden>
+          <p id="invitesleft" class="left" hidden></p>
+          <div id="redeembody">
+          <p><strong>Join Muse, then within 48 hours go to Settings and redeem code <span id="invitecode" class="codebox"></span>.</strong></p>
+          <p>You and Cryptolaz both get 1 billion Muse tokens.</p>
+          <button id="copycode" class="btn small" type="button">Copy code</button>
+          <span id="codemsg" class="msg" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card step">
+      <div class="num">2</div>
+      <div>
+        <h2>Copy the message</h2>
+        <p>One tap. Then open a <em>new chat</em> in Muse and paste it.</p>
+        <button id="copysteps" class="btn" type="button">Copy the message</button>
+        <a id="dl" class="alt" href="#">or download it as a file</a>
+        <p id="copymsg" class="msg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="card step">
+      <div class="num">3</div>
+      <div>
+        <h2>Follow along</h2>
+        <p>Muse walks you through the basic Dip/Rip one small step at a time and waits for your OK. It is <strong>paper practice only</strong> and <strong>SOL only</strong>: no real money, no live trading.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Want your own share link?</h2>
+      <p>Enter your email once. You get a personal link to send to friends. Same email, same link, every time.</p>
+      <form id="regform" novalidate>
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com">
+        <label for="handle">TikTok / YouTube handle for the Crew log shoutout <span class="opt">(optional)</span></label>
+        <input id="handle" name="handle" type="text" maxlength="31" autocomplete="off" placeholder="@yourhandle">
+        <label class="check"><input id="consent" type="checkbox"> Yes, you can show my handle in a video</label>
+        <p class="small">Shoutouts are a thank-you only: no prizes, no money. Leave it blank to stay private. Untick and resubmit any time to withdraw.</p>
+        <button class="btn" type="submit">Get my link</button>
+      </form>
+      <p id="msg" class="msg" role="status" aria-live="polite"></p>
+      <div id="result" hidden>
+        <p>Your code: <strong id="code"></strong></p>
+        <input id="link" type="text" readonly aria-label="Your share link">
+        <button class="btn small" id="copy" type="button">Copy link</button>
+      </div>
+    </section>
+
+    <section class="privacy">
+      <h3>Privacy &amp; honesty</h3>
+      <p>Your email is used only to make your link. It is stored privately by the CryptoLaz-bot owner, never published or sold, and deleted on request. We count taps on each link; we never store anyone's IP address or browser details in readable form.</p>
+      <p>Not affiliated with Meta or Muse. Educational content only, not financial advice. Referrals and shoutouts carry no cash, prizes or rewards. A TikTok/YouTube handle is stored privately and shown in a video only if you tick the consent box; untick and resubmit to withdraw. Nothing here asks for your keys, seed phrase or passwords.</p>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
